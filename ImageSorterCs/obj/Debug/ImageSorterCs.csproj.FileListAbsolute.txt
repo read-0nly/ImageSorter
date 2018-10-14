@@ -1,0 +1,9 @@
+H:\Software\ImageSorterCs\ImageSorterCs\bin\Debug\ImageSorterCs.exe.config
+H:\Software\ImageSorterCs\ImageSorterCs\bin\Debug\ImageSorterCs.exe
+H:\Software\ImageSorterCs\ImageSorterCs\bin\Debug\ImageSorterCs.pdb
+H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.csprojResolveAssemblyReference.cache
+H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.Properties.Resources.resources
+H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.csproj.GenerateResource.Cache
+H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.exe
+H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.pdb
+H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.ImageSorter.resources
