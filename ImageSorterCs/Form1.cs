@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,7 @@ namespace ImageSorterCs
 {
     public partial class ImageSorter : Form
     {
-        string mnemonics = "123456789qwertyuiop";
+        string mnemonics = "123456789qwertyuiopasdfghjklzxcvbnm";
         string root;
         public int fileIndex = 0;
         List<string> dirs;
@@ -42,6 +43,7 @@ namespace ImageSorterCs
             int index = 0;
             foreach (string dir in dirs)
             {
+                if (mnemonics.Length - 1 < index) { break; }
                 System.Windows.Forms.Button button;
                 button = new folderButton(dir, pictureBox1, mnemonics[index].ToString(),this);
                 flowLayoutPanel1.Controls.Add(button);
@@ -53,14 +55,20 @@ namespace ImageSorterCs
             flowLayoutPanel1.Controls.Add(prevButton);
             fileIndex = 0;
             loadImage();
+
         }
 
         public void loadImage()
         {
+            
             List<string> files = System.IO.Directory.EnumerateFiles(root).ToList<String>();
+            folderProgress.Maximum = files.Count;
             fileIndex = (fileIndex < files.Count ? (fileIndex>0?fileIndex:files.Count-1) : 0);
+            
             string newImage = files[fileIndex];
             pictureBox1.ImageLocation = newImage;
+            folderProgress.Value=fileIndex;
+            filecounter.Text = fileIndex.ToString() + ":" + files.Count;
 
         }
     }
@@ -84,6 +92,7 @@ namespace ImageSorterCs
             FolderName = folderParts[folderParts.Length - 1];
             this.Text = "&" + i + ") " + FolderName;
             this.PicBox = picBox;
+            this.TextAlign = ContentAlignment.TopLeft;
             this.parentForm = f;
         }
         public void moveFile(object sender, EventArgs e)
@@ -109,6 +118,7 @@ namespace ImageSorterCs
             this.UseVisualStyleBackColor = true;
             this.Click += new System.EventHandler(this.doAction);
             this.Text = "&"+mnemonic+")"+(mode==1?">":(mode==2?"<":"wut"));
+            this.TextAlign = ContentAlignment.TopLeft;
             Mode = mode;
             formRef = f;
         }

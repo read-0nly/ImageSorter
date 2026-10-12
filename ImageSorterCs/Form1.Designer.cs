@@ -34,6 +34,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.folderProgress = new System.Windows.Forms.ProgressBar();
+            this.filecounter = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -53,7 +55,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(438, 276);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(832, 697);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -63,7 +65,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(154, 270);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(154, 691);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -73,7 +75,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(163, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 270);
+            this.pictureBox1.Size = new System.Drawing.Size(666, 691);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -98,7 +100,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(163, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 20);
+            this.textBox1.Size = new System.Drawing.Size(666, 20);
             this.textBox1.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -110,18 +112,40 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 294);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 728);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(438, 27);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(832, 27);
             this.tableLayoutPanel2.TabIndex = 3;
+            // 
+            // folderProgress
+            // 
+            this.folderProgress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.folderProgress.Location = new System.Drawing.Point(15, 709);
+            this.folderProgress.Name = "folderProgress";
+            this.folderProgress.Size = new System.Drawing.Size(765, 16);
+            this.folderProgress.Step = 1;
+            this.folderProgress.TabIndex = 4;
+            // 
+            // filecounter
+            // 
+            this.filecounter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.filecounter.Location = new System.Drawing.Point(786, 709);
+            this.filecounter.Name = "filecounter";
+            this.filecounter.Size = new System.Drawing.Size(55, 16);
+            this.filecounter.TabIndex = 5;
+            this.filecounter.Text = "label1";
+            this.filecounter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ImageSorter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 333);
+            this.ClientSize = new System.Drawing.Size(856, 770);
+            this.Controls.Add(this.filecounter);
+            this.Controls.Add(this.folderProgress);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ImageSorter";
@@ -143,6 +167,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.ProgressBar folderProgress;
+        private System.Windows.Forms.Label filecounter;
     }
 }
 

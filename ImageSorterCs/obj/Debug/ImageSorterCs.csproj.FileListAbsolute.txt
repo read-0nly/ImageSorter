@@ -7,3 +7,14 @@ H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.csproj.GenerateR
 H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.exe
 H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.pdb
 H:\Software\ImageSorterCs\ImageSorterCs\obj\Debug\ImageSorterCs.ImageSorter.resources
+D:\GitHub\ImageSorter\ImageSorterCs\bin\Debug\ImageSorterCs.exe.config
+D:\GitHub\ImageSorter\ImageSorterCs\bin\Debug\ImageSorterCs.exe
+D:\GitHub\ImageSorter\ImageSorterCs\bin\Debug\ImageSorterCs.pdb
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.csproj.AssemblyReference.cache
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.exe.config
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.ImageSorter.resources
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.Properties.Resources.resources
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.csproj.GenerateResource.cache
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.csproj.CoreCompileInputs.cache
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.exe
+D:\GitHub\ImageSorter\ImageSorterCs\obj\Debug\ImageSorterCs.pdb
